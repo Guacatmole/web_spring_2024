@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function playGame() {
+         var enter = confirm("Shall we play a game?");
+         alert(enter);
+        if (enter == true) {
+            //start the game with exposition discribing the story
+            alert("How about Global Thermonuclear War?")
+            alert("This game is not suported please continue to the real game")
+            alert("A strange figure nocks down your door and grabs your sister who is sleeping on the couch. the figure says 'bring me 1000 gold pieces and I will give back your sister.' You follow your assailent ");
+
+            var enterCave = prompt("you find yourself at the enternce to a cave. The cave is dark and musty the back wall splits in to three semingly identicle pathes, wich do you chose 1, 2, or 3")
+            if (enterCave == 1 ){
+                alert("A sword shoots from the ground and impails you. You die game over.");
+            } else if (enterCave == 2) {
+                alert("A log falls from the celing and cruches you. You die game over.");
+            } else {
+                alert("The path has no traps but there is a box which you open to find 250 gold coins");
+                var box = prompt("You continue to a spase gray room with a vase, a chest, and a painting hanging on the wall which do you want to search? please type vase, chest, or painting");
+                if (box == "vase") {
+                    alert("You pear into the vase and hear a rumbling. The vase spits acid in your face and floods the room. You die game over.");
+                }
+                else if (box == "chest") {
+                    alert("When you tuch the chest if feals strangly like flesh and your hand sinks into it something pulls the rest of you through the top of the chest. You die game over. ");
+                } else {
+                    // dosent pop up in live surver
+                    alert("You push aside the painting and find a stack of 250 coins. A hidden door oppens at the back of the room");
+                    // the following code is for the split dicesn
+                
+                        var door = prompt("the next room has 3 sturdy wooden dors with iron bars. which one do you want to go through? 1, 2, or 3");
+
+                        if (door == 1) {
+                        alert("the door swings open with no resetence tide to the back of the door is 250 gold peces")
+
+                            var lego = prompt("you find your self in a room with legos on the floor. Hanging on the walls are 3 instrouctins books a dog, a spaceship, or a house, which do you build? please type dog, ship, or house");
+
+                            if (lego == "dog") {
+                                alert("You build the dog. the dog comes to life and eats you. You die Game Over");
+                            }
+                            else if (lego == "house") {
+                                alert("you build the house. The door to the house opens and sucks you in. You die Game Over");
+                            } else {
+                                alert("you build the spaceship! the spaceship starts to hover around you. It drops 250 gold. you now have 1000 gold and a hole in the wall appears. the spaceship says'I can shoot things for you if you want.'");
+
+                                var final = prompt("You enter a large cavern. The kidnaper is waiting for you. Your sister is atached to the cavern roof by a long cord she is hanging about 2 feet above the floor do you want to order the spaceship to shoot your kidnaper, shoot the rope holding your sister, or pay the ransom. Type shoot, rope, or pay");
+
+                                if (final == "shoot") {
+                                    alert("A bright laser shoots your assailent, he disintagates and you leave with your sister happly ever after.");
+                                }
+                                else if (final == "rope") {
+                                    alert("You point the spaceship at the roep. Your head explodes from the bullet that hits your brain. You die Game Over");
+                                }
+                                else {
+                                    alert("You show the 1000 gold coins 'I dont care about your money' he says and shoots you in the gut. You die Game Over.");
+                                }
+                            }
+                        }
+
+                        else if (door == 2) {
+                        alert("your hands are stuck to the door and you stay there until you die of deyidration. Game over.");
+                        }
+
+                    else {
+                        alert("The door opens into hallway, at the end of the hall way there is a gleaming golden sword stuck into a door. You grab it up and continue through the door");
+
+                            var choice = prompt("On the other side of the door your asailent waits for you. Your sister is atached to the cavern roof by a long cord she is hanging about 2 feet above the floor. you can pay the ransom, atack your asailnt, or cut your sister down. please write pay, attack, or cut");
+                            if (choice == "pay") {
+                                alert("The kidnaper says 'Thats bearly half of what I asked for!' he shoots you. You die Game Over");
+                            }
+                            else if (choice =="attack") {
+                                alert("You swing your sword! something hits you, you look down to see a gunshot wound in your gut. You die Game Over.");
+                            } else {
+                                alert("you try to cut down your sister. You strike the rope then everything gose black. You have been shot in the head. You die Game Over");
+                            }
+
+                    }
+                }
+            }
+        }
+        else {
+            // nothing happens
+            alert("FWI your sister got muredured");
+            alert("Game Over");
+            
+        }
+    
+
+        var playAgain = confirm("Do you want to play again");
+        if (playAgain == true) {
+            playGame();
+        } else {
+            alert("Thanks for playing have a nice day. if you dicide to contiue please relode the page");
+        }
+    }
+    
+
+        playGame();
+
+
+    </script>
+</body>
+</html>

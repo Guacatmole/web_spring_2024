@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel | JS demo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/Javascript" src="js/script.js"></script>
+</head>
+<body>
+    <div>
+    <h1>Today, we will learn about Javascript</h1>
+    </div>
+    <div>
+        <h2>How do we do oneclick events with JS?</h2>
+        <p><a href="http://www.google.com" onclick="alert('HoW\nDaRe\nYOu\nlEaVe\nmY\nWeBsiTe'); alert('pLeASe\nDon\'t'); alert('I m   w a r n i n g   y o u'); alert('10'); alert('9'); alert('8'); alert('7'); alert('6'); alert('5'); alert('4'); alert('3');alert('2');alert('1');alert('0');alert('fine you win'); alert('leave me alone I guess');alert('not like I wanted a friend or anything'); alert('sob sob sob'); alert('sob sob'); alert('sob'); alert('I SAID GOOOOO!!!!!'); alert('AND DON\'T COME BACK')">Search Google</a></p>
+
+        <h2>How do we do math with JS?</h2>
+        <p>What is 5+6</p>
+        <button onclick="document.getElementById('add').innerHTML = 5+6">Click Here to know</button>
+        <p id="add"></p>
+
+        <h2>We can also display date and time with JS</h2>
+        <button onclick="document.getElementById('date').innerHTML=Date()">Click here for the date and time</button>
+        <p id="date"></p>
+
+        <h2>how do we chainge text with JS?</h2>
+        <button onclick="document.getElementById('chainge-text').innerHTML='WOO this is so fun'">Click to change the text below</button>
+        <p id="chainge-text">I'm bord please fix that</p>
+
+        <h2>How do we make a function with JS?</h2>
+        <p>lets use a funtion to add text</p>
+        <button onclick="pFun()">run a function</button>
+        <p id="p-fun"></p>
+
+        <h2>how do we reture user data</h2>
+        <button onclick="askName()">click here to enter your name</button>
+        <p id="ask-name"></p>
+
+        <h2>how do we ask questions with external JS?</h2>
+        <button onclick="askQuestion()">click here for your question!</button>
+        <p id="question"></p>
+
+        <h2>How can i make an image appear with a button</h2>
+        <button onclick="showImage()">click here</button>
+        <br>
+        <img id="promac" src="" width="400px">
+        <p id="money"></p>
+    </div>
+
+    <script>
+        function askName(){
+            var nameReturen = document.getElementById('ask-name');
+            var name = prompt('please enter your name' , 'HERE');
+            if (name == '') {
+                alert('please try again')
+            } else {
+                nameReturen.innerHTML = 'Hello ' + name + '! nice to meet you';
+            }
+        }
+        
+        function pFun() {
+            var p = document.getElementById('p-fun');
+            p.innerHTML='you just ran a function';
+            p.style.fontSize='30px';
+            p.style.color='blue';
+            p.style.textAlign='center';
+        }
+
+        alert('YO!\nWelcome\nTo\nMy\nWebsite\nDude')
+    </script>
+</body>
+</html>
