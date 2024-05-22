@@ -1,0 +1,27 @@
+body {
+    background-color: aqua;
+    border: 1cm;
+    border-radius: 20%;
+    border-color: azure;
+}
+
+button {
+    border-radius: 60000%;
+    font-size: 20px;
+    border-color: rgb(0, 0, 0);
+    border-width:30px;
+    font-size: 15px;
+    font-family: fantasy;
+}
+#fortune {
+    font-weight: 200;
+    border-style:solid;
+    border-radius: 60000%;
+    font-size: 20px;
+    border-color: rgb(0, 0, 0);
+    border-width:20px;
+    font-size: 20px;
+    font-family: fantasy;
+    color: rgb(226, 43, 180);
+    background-color: aliceblue;
+}
