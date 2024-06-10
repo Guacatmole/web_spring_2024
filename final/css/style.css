@@ -1,0 +1,95 @@
+.nav {
+    list-style: none;
+    text-align: center;
+    font-size: 25px;
+    border: 5px solid black;
+    border-radius: 10px;
+    background-color: aquamarine;
+}
+
+.nav a {
+    text-decoration: none;
+    color: violet;
+}
+
+.nav li {
+    display: inline;
+    margin: 30px;
+}
+
+#eli {
+    width: 1200px;
+    border: 30px solid black;
+    border-radius: 90px;
+}
+
+button {
+    border-radius: 90%;
+    font-size: 40px;
+    border-color: rgb(0, 0, 0);
+    border-width:30px;
+    padding: 50px;
+}
+
+#fortune {
+    border: 10px solid rgb(255, 255, 255);
+    border-radius: 90%;
+    font-size: 35px;
+    padding: 10px;
+    color: rgb(0, 255, 247);
+}
+
+.text-overlay {
+    position: relative;
+    text-align: center;
+    color: rgb(0, 255, 247);
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#catrizz {
+    border: 20px solid black;
+    border-radius: 90px;
+}
+
+
+#home {
+    font-family: sans-serif;
+}
+
+#gab {
+    border: 15px solid black;
+    border-radius: 15px;
+    outline: 3px solid aqua;
+}
+
+.two {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+}
+
+.one {
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+#disco {
+    border: 15px solid black;
+    border-radius: 15px;
+    outline: 3px solid aqua;
+}
+
+#interest {
+    font-family: sans-serif;
+}
+
+#kings {
+    border: 15px solid black;
+    border-radius: 15px;
+    outline: 3px solid aqua;
+}
